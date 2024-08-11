@@ -19,7 +19,6 @@ public:
 
     // Copy constructor
     Person(const Person &other) {
-        cout << "Copy constructor running for " << other.name << endl;
         name = other.name;
         age = other.age;
     }
@@ -37,9 +36,22 @@ public:
     }
 
     void print() const {
-        cout << name << ": " << age << endl;
+        cout << name << ": " << age << flush;
     }
 
+    bool operator<(const Person &other) const {
+        // This operator is also used to determine if two keys are equal!
+        // See https://stackoverflow.com/questions/27153303
+        //
+        // In short:
+        // a == b ~ !(a<b) && !(b<a)
+
+        if (name == other.name) {
+            return age < other.age;
+        } else {
+            return name < other.name;
+        }
+    }
 
 private:
     string name;
@@ -48,17 +60,18 @@ private:
 
 int main() {
 
-    map<int, Person> people;
+    map<Person, int> people;
 
-    people[3] = Person("Mike", 40);
-    people[8] = Person("Vicky", 30);
-    people[2] = Person("Raj", 20);
+    people[Person("Mike", 40)] = 43;
+    people[Person("Mike", 50)] = 53;
+    people[Person("Vicky", 30)] = 31;;
+    people[Person("Raj", 20)] = 23;
 
-    people.insert(make_pair(55, Person("Bob", 45)));
 
     for (auto it = people.begin(); it != people.end(); ++it) {
-        cout << it->first << ": " << flush;
-        it->second.print();
+        cout << it->second << ": " << flush;
+        it->first.print();
+        cout << endl;
     }
 
 

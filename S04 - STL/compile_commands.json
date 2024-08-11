@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-c",
+      "-Wall",
+      "-std=c++11",
+      "-o",
+      "Customs",
+      "Customs.cpp"
+    ],
+    "directory": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL",
+    "file": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Customs.cpp",
+    "output": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Customs"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-c",
+      "-Wall",
+      "-std=c++11",
+      "-o",
+      "Lists",
+      "Lists.cpp"
+    ],
+    "directory": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL",
+    "file": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Lists.cpp",
+    "output": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Lists"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-c",
+      "-Wall",
+      "-std=c++11",
+      "-o",
+      "Maps",
+      "Maps.cpp"
+    ],
+    "directory": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL",
+    "file": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Maps.cpp",
+    "output": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Maps"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-c",
+      "-Wall",
+      "-std=c++11",
+      "-o",
+      "Vectors",
+      "Vectors.cpp"
+    ],
+    "directory": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL",
+    "file": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Vectors.cpp",
+    "output": "/Users/hanswienen/Documents/Persoonlijk/Vrije Tijd/Studie/MOOCs/Advanced C++ Programming/S04 - STL/Vectors"
+  }
+]

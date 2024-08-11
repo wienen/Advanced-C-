@@ -1,0 +1,10 @@
+# clangd configuration file, in lieu of compile_commands.json and compile_flags.txt
+# See https://clangd.llvm.org/config.html
+
+If:
+  PathMatch: .*\.cpp
+
+CompileFlags:
+  Add: [-std=c++11, -xc++, -Wall]]
+  Compiler: clang++
+
