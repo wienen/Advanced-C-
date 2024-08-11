@@ -1,8 +1,6 @@
 /***********************************************************************
  *
- * @file: Nested.cpp
- *
- * @brief Program to demonstrate nested template classes.
+ * Name: RingBuffer.cpp
  *
  ***********************************************************************/
 
@@ -12,11 +10,21 @@
 using namespace std;
 
 
+
 int main() {
 
-    Ring<int>::iterator it;
+    Ring <string> textring(3);
 
-    it.print();
+    textring.add("one");
+    textring.add("two");
+    textring.add("three");
+    textring.add("four");
+
+    for (auto item: textring) {
+        cout << item << endl;
+    }
+
 
     return 0;
+
 }
